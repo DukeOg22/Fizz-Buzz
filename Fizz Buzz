@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    /*Fizz Buzz
+    input values
+    if input % 3 == 0 only print fizz
+    else if input % 5 == 0 only print buzz
+    else if input % 15 ==0 print FizzBuzz
+    */
+
+    int input, both ;
+    cout << "Input any number: ";
+    cin >> input ;
+    both = input % 3 == 0 && input % 5 == 0;
+    if (input % 3 == 0 && input % 5 != 0)  {
+        cout << "Fizz";
+    }
+    else if (input % 5 == 0 && input % 3 != 0 ) {
+        cout << "Buzz";
+    }
+    else if ( input % 15 == 0 ||both) {
+        cout << "FizzBuzz";
+    }
+    else {
+        cout << "sorry";
+    }
+    return 0;
+}
